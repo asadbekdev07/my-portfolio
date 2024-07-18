@@ -40,6 +40,7 @@
   .box-shadow-small {
     box-shadow: inset 10px 8px 10px rgba(255, 150, 51, 0.3);
   }
+  
 
   .box-shadow-big {
     position: relative;
@@ -100,6 +101,7 @@
   .text-shadow-custom-0 {
     text-shadow: none;
   }
+  
 }
 
 html {

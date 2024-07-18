@@ -1,7 +1,7 @@
 import React from "react";
 
 const SkillCard = ({ title, description, icon }) => (
-  <div className="w-[280px] card-custom" data-aos="fade-up">
+  <div className="w-[280px] card-custom" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
     <div className="flex justify-between mb-5">
       <h4>{title}</h4>
       <div>{icon}</div>

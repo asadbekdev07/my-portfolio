@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Experience from "./components/Experience";
 import Hero from "./components/Hero"
 import SiteHeader from "./components/Site-header"
 import AOS from 'aos';
@@ -20,6 +21,7 @@ function App() {
       <SiteHeader />
       <Hero />
       <About />
+      <Experience />
     </div>
   )
 }

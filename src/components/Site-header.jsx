@@ -15,7 +15,11 @@ const SiteHeader = () => {
                 </li>
                 {/* ITEM  */}
                 <li className='inline-block'>
-                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#portfolio">Portfolio</a>
+                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#experience">Experience</a>
+                </li>
+                {/* ITEM  */}
+                <li className='inline-block'>
+                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#projects">Projects</a>
                 </li>
                 {/* ITEM  */}
                 <li className='inline-block'>
