@@ -14,20 +14,20 @@
 
   .vertical-line {
     position: relative;
-    width: 3px; 
+    width: 3px;
     height: 150px;
     background-color: #ff9633;
     margin-left: 3;
   }
 
   .vertical-line::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: inherit;
-    background-color: inherit; 
+    background-color: inherit;
   }
 
   .custom-icon {
@@ -36,6 +36,69 @@
 
   .custom-icon:hover path {
     color: #ff9633;
+  }
+  .box-shadow-small {
+    box-shadow: inset 10px 8px 10px rgba(255, 150, 51, 0.3);
+  }
+
+  .box-shadow-big {
+    position: relative;
+  }
+  
+  .box-shadow-big::before,
+  .box-shadow-big::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 150, 51, 0.5);
+    inset: 0;
+    z-index: -1;
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .box-shadow-big::before {
+    box-shadow: 10px 8px 10px rgba(255, 150, 51, 0.5); /* Top and Left */
+  }
+  
+  .box-shadow-big::after {
+    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.5); /* Bottom and Right */
+  }
+
+  .before-paragraph-custom {
+    position: relative;
+    padding-left: 60px;
+  }
+
+  .before-paragraph-custom::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ff9633;
+  }
+
+  .card-custom {
+    border-radius: 8px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid transparent;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+  }
+
+  .card-custom:hover {
+    border: 1px solid #ff9633;
+    box-shadow: 0 8px 20px 0 rgba(255, 150, 51, 0.3), 0 6px 20px 0 rgba(255, 150, 51, 0.3);
+  }
+
+  .text-shadow-custom {
+    text-shadow: 4px 4px #ff9633;
+  }
+
+  .text-shadow-custom-0 {
+    text-shadow: none;
   }
 }
 

@@ -11,15 +11,15 @@ const SiteHeader = () => {
             <ul className='flex items-center'>
                 {/* ITEM  */}
                 <li className='inline-block'>
-                    <a className='block' href="#about">About</a>
+                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#about">About</a>
                 </li>
                 {/* ITEM  */}
                 <li className='inline-block'>
-                    <a className='block' href="#about">Portfolio</a>
+                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#portfolio">Portfolio</a>
                 </li>
                 {/* ITEM  */}
                 <li className='inline-block'>
-                    <a className='block' href="#about">Contact</a>
+                    <a className='block hover:text-[#ff9633] transition-colors duration-200 ease-in' href="#contact">Contact</a>
                 </li>
             </ul>
             <input className='p-2 bg-[#2b3235] rounded' type="search" placeholder='Search'/>
