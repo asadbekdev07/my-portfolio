@@ -7,7 +7,7 @@ const About = () => {
           <div className="container-custom">
             <h2 className="text-5xl mb-8" data-aos="fade-up">About</h2>
             <p className="before-paragraph-custom mb-12" data-aos="fade-up">
-              I am a highly motivated Frontend Developer with over a year of
+              I am a highly motivated Frontend Developer with almost two years of
               experience, adept at transforming complex requirements into
               user-friendly solutions. At <span className="text-[#ff9633]">IT Time Agency</span> and <a className="text-[#ff9633]" href="https://limsa.uz/" target="_blank">Limsa</a>, I honed my skills in
               JavaScript, React, Redux, and the integration of RESTful APIs,

@@ -47,6 +47,7 @@ const Experience = () => {
       <section className="text-white bg-[#272c2e] box-shadow-small">
         <div className="container-custom pt-12 pb-12">
           <h2
+            id="experience"
             className="text-5xl text-center mb-10"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
