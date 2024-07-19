@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Experience from "./components/Experience";
 import Hero from "./components/Hero"
+import Projects from "./components/Projects";
 import SiteHeader from "./components/Site-header"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +23,7 @@ function App() {
       <Hero />
       <About />
       <Experience />
+      <Projects />
     </div>
   )
 }
