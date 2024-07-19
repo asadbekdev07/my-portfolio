@@ -1,7 +1,12 @@
 import React from "react";
 
 const SkillCard = ({ title, description, icon }) => (
-  <div className="w-[280px] card-custom" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+  <div
+    className="w-[280px] card-custom"
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
+  >
     <div className="flex justify-between mb-5">
       <h4>{title}</h4>
       <div>{icon}</div>
@@ -14,12 +19,14 @@ const Skills = () => {
   const skills = [
     {
       title: "HTML",
-      description:
-        (
-          <>
-            I am skilled in <span className="text-[#ff9633]">HTML</span>, using it to create structured and accessible web pages. I focus on semantic markup, responsive design, and integrating multimedia to deliver user-friendly web experiences.
-          </>
-        ),
+      description: (
+        <>
+          I am skilled in <span className="text-[#ff9633]">HTML</span>, using it
+          to create structured and accessible web pages. I focus on semantic
+          markup, responsive design, and integrating multimedia to deliver
+          user-friendly web experiences.
+        </>
+      ),
       color: "#e44d26",
       icon: (
         <svg
@@ -250,17 +257,19 @@ const Skills = () => {
     },
     {
       title: "GIT / Github",
-      description:
-      (
+      description: (
         <>
-        I leverage <span className="text-[#ff9633]">Git</span> for version control and <span className="text-[#ff9633]">Github</span> for collaborative repository management, ensuring efficient code organization and seamless team collaboration.
+          I leverage <span className="text-[#ff9633]">Git</span> for version
+          control and <span className="text-[#ff9633]">Github</span> for
+          collaborative repository management, ensuring efficient code
+          organization and seamless team collaboration.
         </>
       ),
       color: "#e44d26",
       icon: (
         <div className="flex">
           <svg
-          className="mr-1"
+            className="mr-1"
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="30"
@@ -293,20 +302,80 @@ const Skills = () => {
     },
     {
       title: "Firebase",
-      description:
-        (
-          <>
-            I utilize <span className="text-[#ff9633]">Firebase</span> to develop scalable web applications, leveraging Firestore for flexible databases, Authentication for user management, and <span className="text-[#007bff]">Cloud Functions</span> for backend logic. Firebase Hosting facilitates seamless deployment, ensuring efficient and responsive web development.
-          </>
-        ),
+      description: (
+        <>
+          I utilize <span className="text-[#ff9633]">Firebase</span> to develop
+          scalable web applications, leveraging Firestore for flexible
+          databases, Authentication for user management, and{" "}
+          <span className="text-[#007bff]">Cloud Functions</span> for backend
+          logic. Firebase Hosting facilitates seamless deployment, ensuring
+          efficient and responsive web development.
+        </>
+      ),
       color: "#e44d26",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 32 32" width="30">
-    <path d="M19.62 11.558l-3.203 2.98-2.972-5.995 1.538-3.448c.4-.7 1.024-.692 1.414 0z" fill="#ffa000"/>
-    <path d="M13.445 8.543l2.972 5.995-11.97 11.135z" fill="#f57f17"/>
-    <path d="M23.123 7.003c.572-.55 1.164-.362 1.315.417l3.116 18.105-10.328 6.2c-.36.2-1.32.286-1.32.286s-.874-.104-1.207-.3L4.447 25.673z" fill="#ffca28"/>
-    <path d="M13.445 8.543l-8.997 17.13L8.455.638c.148-.78.592-.855.988-.167z" fill="#ffa000"/>
-  </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30"
+          viewBox="0 0 32 32"
+          width="30"
+        >
+          <path
+            d="M19.62 11.558l-3.203 2.98-2.972-5.995 1.538-3.448c.4-.7 1.024-.692 1.414 0z"
+            fill="#ffa000"
+          />
+          <path d="M13.445 8.543l2.972 5.995-11.97 11.135z" fill="#f57f17" />
+          <path
+            d="M23.123 7.003c.572-.55 1.164-.362 1.315.417l3.116 18.105-10.328 6.2c-.36.2-1.32.286-1.32.286s-.874-.104-1.207-.3L4.447 25.673z"
+            fill="#ffca28"
+          />
+          <path
+            d="M13.445 8.543l-8.997 17.13L8.455.638c.148-.78.592-.855.988-.167z"
+            fill="#ffa000"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Language",
+      description: (
+        <div>
+          <h2>Uzbek — native</h2>
+          <h2>Turkish — native or bilingual</h2>
+          <h2>English — upper-intermediate</h2>
+          <h2>Russian — pre-intermediate</h2>
+          <h2></h2>
+        </div>
+      ),
+      color: "#e44d26",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M48 112h288M192 64v48M272 448l96-224 96 224M301.5 384h133M281.3 112S257 206 199 277 80 384 80 384"
+            style={{
+              fill: "none",
+              stroke: "#fff",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeWidth: "32px",
+            }}
+          />
+          <path
+            d="M256 336s-35-27-72-75-56-85-56-85"
+            style={{
+              fill: "none",
+              stroke: "#fff",
+              strokeLinecap: "round",
+              strokeLinejoin: "round",
+              strokeWidth: "32px",
+            }}
+          />
+        </svg>
       ),
     },
   ];

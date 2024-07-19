@@ -6,7 +6,7 @@ const Experience = () => {
     {
       date: "February 2024 - Current",
       position: "Frontend Developer",
-      city: "Limsa",
+      company: "Limsa",
       description: [
         "Troubleshot complex issues under pressure",
         "Enhanced user experience through intuitive interfaces",
@@ -14,20 +14,20 @@ const Experience = () => {
       ],
     },
     {
-      date: "July 2023 - January 2024",
-      position: "Frontend Developer",
-      city: "IT Time Agency",
+      date: "November 2023 - Current",
+      position: "Part-time Frontend Developer",
+      company: "CosmicCode",
       description: [
-        "Continuously updated skills through training courses, workshops, and self-study — staying current on industry rends and emerging technologies. Debugged complex software issues, leading to a more stable product release.",
-        "Enhanced user experience by developing and implementing responsive web designs",
+        "We are doing custom projects with my frontend and backend developer friends who work in programming and want to work extra part-time.",
       ],
     },
     {
-      date: "December 2022 - July 2023",
-      position: "Freelancer",
-      city: "Freelance",
+      date: "September 2022 - October 2023",
+      position: "Frontend Developer",
+      company: "IT Time Agency",
       description: [
-        "I have participated in many independent projects as a freelancer. I have built websites for some companies and firms with my friends who were new to programming. This period can be called more volunteer than freelancer.",
+        "Continuously updated skills through training courses, workshops, and self-study — staying current on industry rends and emerging technologies. Debugged complex software issues, leading to a more stable product release.",
+        "Enhanced user experience by developing and implementing responsive web designs",
       ],
     },
   ];
@@ -59,7 +59,7 @@ const Experience = () => {
               {timelineItems.map((item, index) => (
                 <Timeline.Item key={index} label={item.date} color="#ff9633">
                   <h2 className="text-2xl">
-                    {item.position} - {item.city}
+                    {item.position} - {item.company}
                   </h2>
                   <ul>
                     {item.description.map((desc, idx) => (
