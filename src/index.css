@@ -41,6 +41,11 @@
     box-shadow: inset 10px 8px 10px rgba(255, 150, 51, 0.3);
   }
 
+  .box-shadow-in {
+    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.3);
+  }
+  
+
   .box-shadow-big {
     position: relative;
   }
@@ -56,11 +61,11 @@
   }
 
   .box-shadow-big::before {
-    box-shadow: 10px 8px 10px rgba(255, 150, 51, 0.5); /* Top and Left */
+    box-shadow: 10px 8px 10px rgba(255, 150, 51, 0.5); 
   }
 
   .box-shadow-big::after {
-    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.5); /* Bottom and Right */
+    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.5); 
   }
 
   .before-paragraph-custom {
@@ -115,9 +120,9 @@
     margin: 20px;
     position: relative;
     overflow: hidden;
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; 
+    background-position: left center; 
+    background-repeat: no-repeat; 
     color: white;
   }
 
@@ -138,11 +143,58 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px; /* Adjust the height as needed */
+    height: 200px; 
   }
   .hover-card .ant-card-head {
-    border-bottom: none; /* Remove the border from the card header */
+    border-bottom: none; 
   }
+
+ /* ScrollToTop.css */
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.progress-circle-background {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 3;
+}
+
+.progress-circle-bar {
+  fill: none;
+  stroke: #ff9633;
+  stroke-width: 3;
+  transition: stroke-dashoffset 0.3s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 14px solid #ff9633; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg); 
+}
+
 }
 
 html {

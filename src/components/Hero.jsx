@@ -23,6 +23,7 @@ const Hero = () => {
         <button
           className="button-custom mr-4 hover:box-shadow-big"
           data-aos="fade-right"
+          contentEditable={true}
         >
           Contact me
         </button>

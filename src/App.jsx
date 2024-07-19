@@ -1,11 +1,15 @@
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import About from "./components/About"
 import Experience from "./components/Experience";
 import Hero from "./components/Hero"
 import Projects from "./components/Projects";
 import SiteHeader from "./components/Site-header"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import React, { useEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -24,6 +28,9 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <ScrollToTop />
+      <Contact />
+      <Footer />
     </div>
   )
 }

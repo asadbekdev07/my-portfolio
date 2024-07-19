@@ -337,7 +337,7 @@ const Skills = () => {
       ),
     },
     {
-      title: "Language",
+      title: "Languages",
       description: (
         <div>
           <h2>Uzbek — native</h2>

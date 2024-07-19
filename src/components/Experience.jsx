@@ -14,11 +14,11 @@ const Experience = () => {
       ],
     },
     {
-      date: "November 2023 - Current",
+      date: "November 2023 - May 2024",
       position: "Part-time Frontend Developer",
       company: "CosmicCode",
       description: [
-        "We are doing custom projects with my frontend and backend developer friends who work in programming and want to work extra part-time.",
+        "We did custom projects with my frontend and backend developer friends who work in programming and want to work extra part-time.",
       ],
     },
     {
