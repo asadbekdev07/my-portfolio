@@ -3,200 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .button-custom {
-    font-size: 24px;
-    font-weight: 500;
-    border-radius: 5px;
-    padding: 12px 24px;
-    border: 4px solid #ff9633;
-  }
-
-  .vertical-line {
-    position: relative;
-    width: 3px;
-    height: 150px;
-    background-color: #ff9633;
-    margin-left: 3;
-  }
-
-  .vertical-line::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: inherit;
-    background-color: inherit;
-  }
-
-  .custom-icon {
-    color: white;
-  }
-
-  .custom-icon:hover path {
-    color: #ff9633;
-  }
-  .box-shadow-small {
-    box-shadow: inset 10px 8px 10px rgba(255, 150, 51, 0.3);
-  }
-
-  .box-shadow-in {
-    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.3);
-  }
-  
-
-  .box-shadow-big {
-    position: relative;
-  }
-
-  .box-shadow-big::before,
-  .box-shadow-big::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(255, 150, 51, 0.5);
-    inset: 0;
-    z-index: -1;
-    transition: box-shadow 0.5s ease;
-  }
-
-  .box-shadow-big::before {
-    box-shadow: 10px 8px 10px rgba(255, 150, 51, 0.5); 
-  }
-
-  .box-shadow-big::after {
-    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.5); 
-  }
-
-  .before-paragraph-custom {
-    position: relative;
-    padding-left: 60px;
-  }
-
-  .before-paragraph-custom::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: #ff9633;
-  }
-
-  .card-custom {
-    border-radius: 8px;
-    margin-right: 20px;
-    padding: 20px;
-    border: 1px solid transparent;
-    transform-origin: 50% 50%;
-    cursor: pointer;
-  }
-
-  .card-custom:hover {
-    border: 1px solid #ff9633;
-    box-shadow: 0 8px 20px 0 rgba(255, 150, 51, 0.3),
-      0 6px 20px 0 rgba(255, 150, 51, 0.3);
-  }
-
-  .text-shadow-custom {
-    text-shadow: 4px 4px #ff9633;
-  }
-
-  .text-shadow-custom-0 {
-    text-shadow: none;
-  }
-
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .hover-card {
-    width: 300px;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    background-size: cover; 
-    background-position: left center; 
-    background-repeat: no-repeat; 
-    color: white;
-  }
-
-  .hover-card .card-content {
-    opacity: 0;
-    transform: translateY(100%);
-    transition: opacity 0.3s, transform 0.3s;
-    text-align: center;
-  }
-
-  .hover-card:hover .card-content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .hover-card .ant-card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 200px; 
-  }
-  .hover-card .ant-card-head {
-    border-bottom: none; 
-  }
-
- /* ScrollToTop.css */
-.scroll-to-top {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.progress-circle {
-  width: 60px;
-  height: 60px;
-  position: relative;
-}
-
-.progress-circle-background {
-  fill: none;
-  stroke: #e0e0e0;
-  stroke-width: 3;
-}
-
-.progress-circle-bar {
-  fill: none;
-  stroke: #ff9633;
-  stroke-width: 3;
-  transition: stroke-dashoffset 0.3s;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-}
-
-.arrow {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 14px solid #ff9633; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(0deg); 
-}
-
-}
-
+/* Global CSS */
 html {
   box-sizing: border-box;
   height: 100%;
@@ -287,3 +94,352 @@ li {
   margin-right: 30px;
   color: #fff;
 }
+
+:focus {
+  outline: 2px dotted #ff9633;
+  outline-offset: 3px;
+}
+
+@layer utilities {
+  .button-custom {
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 12px 24px;
+    border: 4px solid #ff9633;
+  }
+
+  .vertical-line {
+    position: relative;
+    width: 3px;
+    height: 150px;
+    background-color: #ff9633;
+    margin-left: 3;
+  }
+
+  .vertical-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background-color: inherit;
+  }
+
+  .custom-icon {
+    color: white;
+  }
+
+  .custom-icon:hover path {
+    color: #ff9633;
+  }
+  .box-shadow-small {
+    box-shadow: inset 10px 8px 10px rgba(255, 150, 51, 0.3);
+  }
+
+  .box-shadow-in {
+    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.3);
+  }
+
+  .box-shadow-big {
+    position: relative;
+  }
+
+  .box-shadow-big::before,
+  .box-shadow-big::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 150, 51, 0.5);
+    inset: 0;
+    z-index: -1;
+    transition: box-shadow 0.5s ease;
+  }
+
+  .box-shadow-big::before {
+    box-shadow: 10px 8px 10px rgba(255, 150, 51, 0.5);
+  }
+
+  .box-shadow-big::after {
+    box-shadow: -10px -8px 10px rgba(255, 150, 51, 0.5);
+  }
+
+  .before-paragraph-custom {
+    position: relative;
+    padding-left: 60px;
+  }
+
+  .before-paragraph-custom::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ff9633;
+  }
+
+  .card-custom {
+    border-radius: 8px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid transparent;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+  }
+
+  .card-custom:hover {
+    border: 1px solid #ff9633;
+    box-shadow: 0 8px 20px 0 rgba(255, 150, 51, 0.3),
+      0 6px 20px 0 rgba(255, 150, 51, 0.3);
+  }
+
+  .text-shadow-custom {
+    text-shadow: 4px 4px #ff9633;
+  }
+
+  .text-shadow-custom-0 {
+    text-shadow: none;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .hover-card {
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .hover-card .card-content {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+    text-align: center;
+  }
+
+  .hover-card:hover .card-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hover-card .ant-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  .hover-card .ant-card-head {
+    border-bottom: none;
+  }
+
+  /* ScrollToTop.css */
+  .scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .progress-circle {
+    width: 60px;
+    height: 60px;
+    position: relative;
+  }
+
+  .progress-circle-background {
+    fill: none;
+    stroke: #e0e0e0;
+    stroke-width: 3;
+  }
+
+  .progress-circle-bar {
+    fill: none;
+    stroke: #ff9633;
+    stroke-width: 3;
+    transition: stroke-dashoffset 0.3s;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 14px solid #ff9633;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .form-input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 0 15px;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    border: 2px solid #fff;
+  }
+
+  .form-input:focus {
+    border-color: #ff9633;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  .form-group:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .form-input::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+  }
+
+  .form-group:focus-within .form-input::before {
+    border-color: #ff9633;
+  }
+
+  .form-input::after {
+    content: "";
+    position: absolute;
+    top: 12px; /* Adjust based on label's position */
+    left: 10px; /* Same as label's left */
+    width: 60px; /* Width of the label */
+    height: 10px; /* Height of the label */
+    background: #272c2e; /* Same as the form background color */
+    z-index: 1;
+  }
+
+  .form-label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    transition: all 0.3s ease;
+    background: #272c2e; /* Same as the form background color */
+    padding: 0 5px;
+  }
+  
+
+  .form-input:focus + .form-label,
+  .form-input:valid + .form-label {
+    font-size: 11px;
+    top: -7px;
+  }
+
+  .form-input:focus + .form-label {
+    color: #ff9633;
+  }
+
+  /* .form-textarea {
+    display: block;
+    width: 825px;
+    min-height: 200px;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 15px;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    border: 2px solid #fff;
+  } */
+
+  .form-textarea {
+    display: block;
+    width: 100%; /* Adjust as needed */
+    min-height: 150px; /* Adjust as needed */
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    padding: 15px;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    border: 2px solid #fff;
+  }
+
+  .form-textarea:focus {
+    border-color: #ff9633;
+  }
+
+  .form-textarea::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+  }
+
+  .form-group:focus-within .form-textarea::before {
+    border-color: #ff9633;
+  }
+
+  .form-textarea::after {
+    content: "";
+    position: absolute;
+    top: 12px; 
+    left: 10px; 
+    width: 60px; 
+    height: 10px; 
+    background: #272c2e; 
+    z-index: 1;
+  }
+
+  .form-textarea:focus + .form-label,
+  .form-textarea:valid + .form-label {
+    font-size: 11px;
+    top: -7px;
+  }
+
+  .form-textarea:focus + .form-label {
+    color: #ff9633;
+  }
+
+  .form-textarea::placeholder {
+    text-align: center; 
+    color: #999;
+    font-size: 16px;
+  }
+}
+

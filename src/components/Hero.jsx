@@ -10,8 +10,8 @@ const Hero = () => {
         <p className="text-5xl mb-5 text-shadow-custom" data-aos="fade-right">
           I'm{" "}
           <span className="text-[#ff9633] text-6xl text-shadow-custom-0">
-          <ReactTypingEffect
-              text={['Asadbek Botirqulov']}
+            <ReactTypingEffect
+              text={["Asadbek Botirqulov"]}
               speed={100}
               eraseDelay={1700}
             />
@@ -20,13 +20,14 @@ const Hero = () => {
         <p className="text-5xl mb-5 text-shadow-custom" data-aos="fade-left">
           Frontend Developer
         </p>
-        <button
-          className="button-custom mr-4 hover:box-shadow-big"
-          data-aos="fade-right"
-          contentEditable={true}
-        >
-          Contact me
-        </button>
+        <a href="#contact">
+          <button
+            className="button-custom mr-4 hover:box-shadow-big"
+            data-aos="fade-right"
+          >
+            Contact me
+          </button>
+        </a>
         <a
           href="/Resume.pdf"
           download="Asadbek_Botirqulov_CV.pdf"
@@ -43,8 +44,7 @@ const Hero = () => {
         <div
           className="flex flex-col items-center absolute top-[130px] right-[100px]"
           data-aos="fade-down"
-        >
-          </div>
+        ></div>
       </div>
     </section>
   );
