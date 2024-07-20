@@ -57,6 +57,27 @@ select:-webkit-autofill:focus {
   opacity: 1;
 }*/
 
+/* SCROLL  */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#1f2527;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff9633;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -379,7 +400,11 @@ li {
     color: #fff;
     position: relative;
     border: 2px solid #fff;
+    scrollbar-face-color: #ff8c00;
+    scrollbar-track-color: #fff8dc;
+    scrollbar-arrow-color: #ffffff;
   }
+  
 
   .form-textarea:focus {
     border-color: #ff9633;
@@ -441,6 +466,38 @@ li {
     .before-paragraph-custom::before {
       top: 3%;
       width: 25px;
+    }
+
+    .scroll-to-top {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .progress-circle {
+      width: 50px;
+      height: 50px;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .scroll-to-top {
+      width: 45px;
+      height: 45px;
+      right: 15px;
+      bottom: 15px;
+    }
+  
+    .progress-circle {
+      width: 45px;
+      height: 45px;
+      position: relative;
+    }
+
+    .arrow {
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 12px solid #ff9633;
     }
   }
 
