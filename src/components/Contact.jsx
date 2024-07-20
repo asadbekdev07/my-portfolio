@@ -55,7 +55,7 @@ const Contact = () => {
     <section id="contact" className="pt-20 pb-20 box-shadow-small">
       <div className="container-custom">
         <h2 className="text-5xl text-center mb-10 text-white  900:text-3xl 900:mb-4" data-aos="fade-down">Contact</h2>
-        <form className="w-[80%] m-auto" onSubmit={handleSubmit}>
+        <form className="w-[85%] m-auto" onSubmit={handleSubmit}>
           <div className="flex mb-5 w-[100%] 900:flex-col 900:mb-0">
             <div className="relative mb-4 form-group w-[100%] min900:w-[95%] min900:mr-[5%]">
               <input className="form-input focus:outline-none w-[100%]" type="text" id="name" name="name" required data-aos="fade-right"/>

@@ -10,8 +10,8 @@ const Footer = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className='container-custom pt-12 pb-12'>
-        <h2 className='text-2xl text-white text-center'>
+      <div className='container-custom pt-12 pb-12 660:pt-6 660:pb-6'>
+        <h2 className='text-2xl text-white text-center 660:text-[16px]'>
           © 2023-2024 Asadbek Botirqulov. All Rights Reserved.
         </h2>
       </div>
