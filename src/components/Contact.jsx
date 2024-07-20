@@ -58,11 +58,11 @@ const Contact = () => {
         <form className="w-[85%] m-auto" onSubmit={handleSubmit}>
           <div className="flex mb-5 w-[100%] 900:flex-col 900:mb-0">
             <div className="relative mb-4 form-group w-[100%] min900:w-[95%] min900:mr-[5%]">
-              <input className="form-input focus:outline-none w-[100%]" type="text" id="name" name="name" required data-aos="fade-right"/>
+              <input className="form-input focus:outline-none w-[100%]" type="text" id="name" name="name" required data-aos="fade-up"/>
               <label className="form-label" htmlFor="name">Full Name</label>
             </div>
             <div className="relative mb-4 form-group w-[100%]">
-              <input className="form-input focus:outline-none" type="email" id="email" name="email" required data-aos="fade-left"/>
+              <input className="form-input focus:outline-none" type="email" id="email" name="email" required data-aos="fade-up"/>
               <label className="form-label" htmlFor="email">Email</label>
             </div>
           </div>
