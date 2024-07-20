@@ -127,24 +127,6 @@ li {
     border-radius: 5px;
   }
 
-  .vertical-line {
-    position: relative;
-    width: 3px;
-    height: 150px;
-    background-color: #ff9633;
-    margin-left: 3;
-  }
-
-  .vertical-line::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: inherit;
-    background-color: inherit;
-  }
-
   .custom-icon {
     color: white;
   }
@@ -450,6 +432,17 @@ li {
       padding: 8px 20px;
       font-size: 18px;
     }
+
+    .before-paragraph-custom {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .before-paragraph-custom::before {
+      top: 3%;
+      width: 25px;
+    }
+
   }
 
   @media (max-width: 600px) {
@@ -457,12 +450,26 @@ li {
       padding: 7px 19px;
       font-size: 16px;
     }
+
+    .before-paragraph-custom::before {
+      top: 1.5%;
+    }
   }
 
   @media (max-width: 375px) {
     .button {
       padding: 6px 18px;
       font-size: 14px;
+    }
+
+    .before-paragraph-custom {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .before-paragraph-custom::before {
+      top: 1.2%;
+      width: 15px;
     }
   }
 }

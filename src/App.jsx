@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       {/* <SiteHeader /> */}
-      <Hero />
+      {/* <Hero /> */}
       <About />
       <Experience />
       <Projects />
