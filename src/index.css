@@ -127,6 +127,10 @@ li {
     display: flex;
   }
 
+  .site-header__toggler {
+    display: none;
+  }
+
   .button {
     padding: 12px 24px;
     font-size: 24px;
@@ -461,6 +465,11 @@ li {
     .site-header__sitenav {
       display: none;
     }
+
+    .site-header__toggler {
+      display: block;
+    }
+
     .button {
       padding: 8px 20px;
       font-size: 18px;

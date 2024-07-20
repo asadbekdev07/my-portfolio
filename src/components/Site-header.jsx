@@ -26,7 +26,7 @@ const SiteHeader = () => {
         </a>
 
         <div className="site-header__sitenav">
-          <ul className="flex items-center">
+          <ul className="flex items-center mr-20">
             {/* ITEM  */}
             <li className="inline-block">
               <a
