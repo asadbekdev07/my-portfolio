@@ -59,7 +59,7 @@ const Projects = () => {
     },
   ];
 
-  const [visibleCards, setVisibleCards] = useState(6);
+  const [visibleCards, setVisibleCards] = useState(3);
 
   const loadMore = () => {
     setVisibleCards((prevVisibleCards) => prevVisibleCards + 3);
@@ -109,7 +109,7 @@ const Projects = () => {
         </div>
         {visibleCards < cardsData.length && (
           <div className="text-center mt-6">
-            <button className="button button-project"data-aos="fade-right"  type="primary" onClick={loadMore}>
+            <button className="button button-project"data-aos="fade-right"  type="primary" onClick={loadMore} disabled>
               View More Projects
             </button>
           </div>

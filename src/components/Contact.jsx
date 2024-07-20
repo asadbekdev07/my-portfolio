@@ -54,19 +54,19 @@ const Contact = () => {
   return (
     <section id="contact" className="pt-20 pb-20 box-shadow-small">
       <div className="container-custom">
-        <h2 className="text-5xl text-center mb-10 text-white" data-aos="fade-down">Contact</h2>
-        <form className="w-[825px] m-auto" onSubmit={handleSubmit}>
-          <div className="flex mb-5">
-            <div className="relative mb-4 form-group">
-              <input className="form-input focus:outline-none" type="text" id="name" name="name" required data-aos="fade-right"/>
+        <h2 className="text-5xl text-center mb-10 text-white  900:text-3xl 900:mb-4" data-aos="fade-down">Contact</h2>
+        <form className="w-[80%] m-auto" onSubmit={handleSubmit}>
+          <div className="flex mb-5 w-[100%]">
+            <div className="relative mb-4 form-group mr-[6%] w-[94%]">
+              <input className="form-input focus:outline-none w-[100%]" type="text" id="name" name="name" required data-aos="fade-right"/>
               <label className="form-label" htmlFor="name">Full Name</label>
             </div>
-            <div className="relative mb-4 form-group">
+            <div className="relative mb-4 form-group w-[94%]">
               <input className="form-input focus:outline-none" type="email" id="email" name="email" required data-aos="fade-left"/>
               <label className="form-label" htmlFor="email">Email</label>
             </div>
           </div>
-          <div className="relative mb-4 form-group">
+          <div className="relative mb-4 form-group w-100%">
             <textarea className="form-textarea focus:outline-none" id="textarea" rows="4" name="message" placeholder="Your message here — whether it’s about a potential project, a question, or just to say hello!" required data-aos="fade-up"></textarea>
             <label className="form-label" htmlFor="textarea">Message</label>
           </div>
