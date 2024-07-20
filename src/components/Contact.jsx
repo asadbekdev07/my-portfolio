@@ -70,7 +70,7 @@ const Contact = () => {
             <textarea className="form-textarea focus:outline-none" id="textarea" rows="4" name="message" placeholder="Your message here — whether it’s about a potential project, a question, or just to say hello!" required data-aos="fade-up"></textarea>
             <label className="form-label" htmlFor="textarea">Message</label>
           </div>
-          <button type="submit" className="button-block text-white" data-aos="fade-up">Send message</button>
+          <button type="submit" className="button button-block text-white" data-aos="fade-up">Send message</button>
         </form>
         {statusMessage && <p className="text-center text-white mt-4">{statusMessage}</p>}
       </div>

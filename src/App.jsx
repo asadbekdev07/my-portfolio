@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <SiteHeader />
+      {/* <SiteHeader /> */}
       <Hero />
       <About />
       <Experience />

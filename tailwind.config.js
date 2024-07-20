@@ -5,9 +5,14 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '600': {'max': '600px'}, // Laptop max-width
+        '900': {'max': '900px'},  // Tablet max-width
+        'desktop-max': {'max': '1279px'}, // Desktop max-width
+      },
+    },
   },
   plugins: [],
   mode: 'jit',
 }
-

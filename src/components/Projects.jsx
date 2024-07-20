@@ -109,7 +109,7 @@ const Projects = () => {
         </div>
         {visibleCards < cardsData.length && (
           <div className="text-center mt-6">
-            <button className="button-project"data-aos="fade-right"  type="primary" onClick={loadMore}>
+            <button className="button button-project"data-aos="fade-right"  type="primary" onClick={loadMore}>
               View More Projects
             </button>
           </div>
