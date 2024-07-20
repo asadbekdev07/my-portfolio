@@ -34,7 +34,7 @@ img {
 }
 
 /* AUTOFILL-STYLES */
-/*input:-webkit-autofill,
+input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
@@ -44,9 +44,9 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border-color: transparent;
-  -webkit-text-fill-color: inherit;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-}*/
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #1f2527 inset;
+}
 
 /* PLACEHOLDER-STYLES */
 /*::-webkit-input-placeholder,
@@ -107,6 +107,25 @@ li {
     border-radius: 5px;
     padding: 12px 24px;
     border: 4px solid #ff9633;
+  }
+
+  .button-block {
+    width: 100%;
+    display: block;
+    border: 2px solid #fff;
+    padding: 12px 24px;
+  }
+
+  .button-block:hover,
+  .button-project:hover {
+    border-color: #ff9633;
+    color: #ff9633;
+  }
+
+  .button-project {
+    padding: 12px 24px;
+    border: 2px solid #fff;
+    border-radius: 5px;
   }
 
   .vertical-line {
@@ -356,7 +375,6 @@ li {
     background: #272c2e; /* Same as the form background color */
     padding: 0 5px;
   }
-  
 
   .form-input:focus + .form-label,
   .form-input:valid + .form-label {
@@ -368,24 +386,10 @@ li {
     color: #ff9633;
   }
 
-  /* .form-textarea {
-    display: block;
-    width: 825px;
-    min-height: 200px;
-    background: transparent;
-    border: none;
-    transition: all 0.3s ease;
-    padding: 15px;
-    z-index: 1;
-    color: #fff;
-    position: relative;
-    border: 2px solid #fff;
-  } */
-
   .form-textarea {
     display: block;
-    width: 100%; /* Adjust as needed */
-    min-height: 150px; /* Adjust as needed */
+    width: 825px;
+    min-height: 150px;
     background: transparent;
     border: none;
     transition: all 0.3s ease;
@@ -418,11 +422,11 @@ li {
   .form-textarea::after {
     content: "";
     position: absolute;
-    top: 12px; 
-    left: 10px; 
-    width: 60px; 
-    height: 10px; 
-    background: #272c2e; 
+    top: 12px;
+    left: 10px;
+    width: 60px;
+    height: 10px;
+    background: #272c2e;
     z-index: 1;
   }
 
@@ -437,9 +441,8 @@ li {
   }
 
   .form-textarea::placeholder {
-    text-align: center; 
+    text-align: center;
     color: #999;
     font-size: 16px;
   }
 }
-

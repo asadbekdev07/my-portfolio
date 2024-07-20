@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Button } from "antd";
 
 const Projects = () => {
@@ -33,7 +33,37 @@ const Projects = () => {
       titleColor: "#f333ff",
       link: "https://example.com/1",
     },
+    {
+      title: "Card 6",
+      imageUrl: "url-to-image-6.jpg",
+      titleColor: "#f333ff",
+      link: "https://example.com/6",
+    },
+    {
+      title: "Card 7",
+      imageUrl: "url-to-image-7.jpg",
+      titleColor: "#f333ff",
+      link: "https://example.com/7",
+    },
+    {
+      title: "Card 8",
+      imageUrl: "url-to-image-8.jpg",
+      titleColor: "#f333ff",
+      link: "https://example.com/8",
+    },
+    {
+      title: "Card 9",
+      imageUrl: "url-to-image-9.jpg",
+      titleColor: "#f333ff",
+      link: "https://example.com/9",
+    },
   ];
+
+  const [visibleCards, setVisibleCards] = useState(6);
+
+  const loadMore = () => {
+    setVisibleCards((prevVisibleCards) => prevVisibleCards + 3);
+  };
 
   return (
     <section id="projects" className="text-white bg-[#272c2e] box-shadow-small">
@@ -46,7 +76,7 @@ const Projects = () => {
           My important projects
         </h2>
         <div className="cards-container">
-          {cardsData.map((card, index) => (
+          {cardsData.slice(0, visibleCards).map((card, index) => (
             <Card
               className="hover-card hover:box-shadow-in"
               data-aos="flip-left"
@@ -77,6 +107,13 @@ const Projects = () => {
             </Card>
           ))}
         </div>
+        {visibleCards < cardsData.length && (
+          <div className="text-center mt-6">
+            <button className="button-project"data-aos="fade-right"  type="primary" onClick={loadMore}>
+              View More Projects
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
