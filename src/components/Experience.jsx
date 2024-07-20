@@ -48,7 +48,7 @@ const Experience = () => {
         <div className="container-custom pt-12 pb-12">
           <h2
             id="experience"
-            className="text-5xl text-center mb-10"
+            className="text-5xl text-center mb-10 900:text-3xl"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >

@@ -442,7 +442,6 @@ li {
       top: 3%;
       width: 25px;
     }
-
   }
 
   @media (max-width: 600px) {
@@ -462,6 +461,9 @@ li {
       border: 1px solid transparent;
       transform-origin: 50% 50%;
       cursor: pointer;
+    }
+    .cards-container {
+      padding: 0;
     }
   }
 

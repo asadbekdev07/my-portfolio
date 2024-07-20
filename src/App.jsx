@@ -24,11 +24,11 @@ function App() {
   return (
     <div>
       {/* <SiteHeader /> */}
-      {/* <Hero /> */}
+      <Hero />
       <About />
       <Experience />
       <Projects />
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       {/* <Contact /> */}
       <Footer />
     </div>

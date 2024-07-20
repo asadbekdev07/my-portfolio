@@ -69,7 +69,7 @@ const Projects = () => {
     <section id="projects" className="text-white bg-[#272c2e] box-shadow-small">
       <div className="container-custom pt-12 pb-12">
         <h2
-          className="text-5xl text-center mb-10"
+          className="text-5xl text-center mb-10 900:text-3xl 900:mb-2"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
         >
@@ -78,7 +78,7 @@ const Projects = () => {
         <div className="cards-container">
           {cardsData.slice(0, visibleCards).map((card, index) => (
             <Card
-              className="hover-card hover:box-shadow-in"
+              className="hover-card hover:box-shadow-in 800:w-[100%]"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
