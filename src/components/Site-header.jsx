@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const SiteHeader = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const handleToggle = () => {
     setIsMenuOpen(prevState => !prevState);
@@ -165,8 +165,12 @@ const SiteHeader = () => {
         <button className='site-header__toggler' onClick={handleToggle}>
           <FontAwesomeIcon className="text-[#ff9633] w-7 h-7" icon={isMenuOpen ? faTimes : faBars} size="2x" />
         </button>
+
+      
       </div>
+      {isMenuOpen ? <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt qui sint possimus nulla ad ipsum!</div> : ''}
     </header>
+
   );
 };
 
