@@ -454,6 +454,14 @@ li {
     .before-paragraph-custom::before {
       top: 1.5%;
     }
+
+    .card-custom {
+      border-radius: 8px;
+      padding: 10px;
+      border: 1px solid transparent;
+      transform-origin: 50% 50%;
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 375px) {

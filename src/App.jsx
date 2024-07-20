@@ -29,7 +29,7 @@ function App() {
       <Experience />
       <Projects />
       <ScrollToTop />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   )

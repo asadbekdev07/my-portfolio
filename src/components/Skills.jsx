@@ -2,12 +2,12 @@ import React from "react";
 
 const SkillCard = ({ title, description, icon }) => (
   <div
-    className="w-[280px] card-custom"
+    className="w-[280px] card-custom 660:w-[100%] 660:mb-2"
     data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000"
   >
-    <div className="flex justify-between mb-5">
+    <div className="flex justify-between mb-5 660:mb-3">
       <h4>{title}</h4>
       <div>{icon}</div>
     </div>
@@ -381,11 +381,11 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills text-white pt-8 pb-8">
-      <h2 className="text-5xl text-center mb-8" data-aos="fade-up">
+    <section className="skills text-white pt-8 pb-8 660:pt-4 660:pb-4">
+      <h2 className="text-5xl text-center mb-8 900:text-3xl" data-aos="fade-up">
         My Skills
       </h2>
-      <div className="flex flex-wrap">
+      <div className="flex justify-around flex-wrap">
         {skills.map((skill, index) => (
           <SkillCard key={index} {...skill} />
         ))}
