@@ -456,6 +456,7 @@ li {
     }
 
     .card-custom {
+      margin: 0;
       border-radius: 8px;
       padding: 10px;
       border: 1px solid transparent;
