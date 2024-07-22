@@ -4,16 +4,19 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const SiteHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
   const handleToggle = () => {
     setIsMenuOpen(prevState => !prevState);
+    setIsHeaderFixed(!isHeaderFixed)
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
   return (
-    <header className="site-header mt-7 mb-7">
+    <header className={isHeaderFixed ? 'site-header' : 'mb-7'}>
       <div className="container-custom flex items-center justify-between pt-3 pb-3">
         <a className="mr-8 block" href="#">
           <img
@@ -32,6 +35,7 @@ const SiteHeader = () => {
               <a
                 className="block hover:text-[#ff9633] transition-colors duration-200 ease-in"
                 href="#about"
+                onClick={closeMenu}
               >
                 About
               </a>
@@ -163,12 +167,27 @@ const SiteHeader = () => {
           </div>
         </div>
         <button className='site-header__toggler' onClick={handleToggle}>
-          <FontAwesomeIcon className="text-[#ff9633] w-7 h-7" icon={isMenuOpen ? faTimes : faBars} size="2x" />
+          <FontAwesomeIcon className="text-[#ff9633] w-7 h-7" icon={isMenuOpen ? faBars : faTimes} size="2x" />
         </button>
 
       
       </div>
-      {isMenuOpen ? <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt qui sint possimus nulla ad ipsum!</div> : ''}
+      {isMenuOpen ? "" : <div className="reponsive-nav">
+        <ul>
+          <li>
+            <a href="#about" className="text-6xl">About</a>
+          </li>
+          <li>
+            <a href="#experience" className="text-6xl">Experience</a>
+          </li>
+          <li>
+            <a href="#project" className="text-6xl">Project</a>
+          </li>
+          <li>
+            <a href="#contact" className="text-6xl">Contact</a>
+          </li>
+        </ul>  
+      </div>}
     </header>
 
   );
