@@ -5,7 +5,7 @@ import ReactTypingEffect from "react-typing-effect";
 
 const Hero = () => {
   return (
-    <section className="container-custom text-white pt-[145px] pb-[190px] 900:pt-[40px] 900:pb-[80px] relative flex items-center justify-center">
+    <section className="container-custom text-white pt-[145px] pb-[190px] 900:pt-[140px] 900:pb-[80px] relative flex items-center justify-center">
       <div className="w-[85%] text-center flex flex-col items-center">
         <h2 className="text-center text-5xl 900:text-[20px] 900:mb-2">Hi, It's me</h2>
         <p className="text-5xl mb-5 900:text-[24px] 900:mb-[10px]" data-aos="fade-right">
