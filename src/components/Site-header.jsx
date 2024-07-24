@@ -98,14 +98,6 @@ const SiteHeader = () => {
             </a>
             <a
               className="custom-icon mr-4"
-              href="https://www.instagram.com/asadbek_botirqulov/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 text-[#fff] block" />
-            </a>
-            <a
-              className="custom-icon mr-4"
               href="https://github.com/asadbekdev07"
               target="_blank"
               rel="noopener noreferrer"
@@ -164,14 +156,6 @@ const SiteHeader = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faTelegramPlane} className="w-8 h-8 text-[#fff] block" />
-            </a>
-            <a
-              className="custom-icon mr-4"
-              href="https://www.instagram.com/asadbek_botirqulov/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faInstagram} className="w-8 h-8 text-[#fff] block" />
             </a>
             <a
               className="custom-icon mr-4"
