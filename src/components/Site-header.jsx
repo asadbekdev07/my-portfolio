@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn, faTelegramPlane, faInstagram, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
-const SiteHeader = () => {
+const SiteHeader = ({ headerRef }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsHeaderFixed(window.scrollY > 50); 
+      setIsHeaderFixed(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -27,7 +27,7 @@ const SiteHeader = () => {
   };
 
   return (
-    <header className={isHeaderFixed ? 'site-header fixed' : 'site-header'}>
+    <header ref={headerRef} className={isHeaderFixed ? 'site-header fixed' : 'site-header'}>
       <div className="container-custom flex items-center justify-between pt-3 pb-3 900:pt-2 900:pb-2">
         <a className="mr-8 block" href="#">
           <img
