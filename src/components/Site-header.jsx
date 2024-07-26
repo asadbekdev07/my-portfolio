@@ -104,14 +104,6 @@ const SiteHeader = ({ headerRef }) => {
             >
               <FontAwesomeIcon icon={faGithub} className="w-6 h-6 text-[#fff] block" />
             </a>
-            <a
-              className="custom-icon"
-              href="https://stackoverflow.com/users/23087398/asadbek-botirqulov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faStackOverflow} className="w-6 h-6 text-[#fff] block" />
-            </a>
           </div>
         </div>
         <button 
@@ -164,14 +156,6 @@ const SiteHeader = ({ headerRef }) => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} className="w-8 h-8 text-[#fff] block" />
-            </a>
-            <a
-              className="custom-icon"
-              href="https://stackoverflow.com/users/23087398/asadbek-botirqulov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faStackOverflow} className="w-8 h-8 text-[#fff] block" />
             </a>
           </div>
         </div>
