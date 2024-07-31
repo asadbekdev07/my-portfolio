@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <ConfigProvider theme={customTheme}>
       <section className="text-white bg-[#272c2e] box-shadow-small">
-        <div className="container-custom pt-12 pb-12">
+        <div className="container-custom pt-14 pb-12">
           <h2
             id="experience"
             className="text-5xl text-center mb-10 900:text-3xl"
@@ -58,10 +58,8 @@ const Experience = () => {
             <Timeline mode="alternate">
               {timelineItems.map((item, index) => (
                 <Timeline.Item key={index} label={item.date} color="#ff9633">
-                  <h2 className="text-2xl">
-                    {item.position} - {item.company}
-                  </h2>
-                  <ul>
+                  <h3 className="text-2xl font-bold">{item.position} - {item.company}</h3>
+                  <ul className="mt-2 space-y-2">
                     {item.description.map((desc, idx) => (
                       <li className="text-[14px]" key={idx}>
                         {desc}

@@ -4,7 +4,7 @@ import Skills from "./Skills";
 const About = () => {
     return (
       
-        <section id="about" className="bg-[#2f3131] text-white pt-12 pb-12 box-shadow-small 900:pt-8 900:pb-8">
+        <section id="about" className="bg-[#2f3131] text-white pt-20 pb-12 box-shadow-small">
           <div className="container-custom">
             <h2 className="text-5xl mb-8 900:text-3xl 900:mb-5" data-aos="fade-up">About</h2>
             <p className="before-paragraph-custom mb-12 900:mb-8" data-aos="fade-up">

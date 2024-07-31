@@ -27,15 +27,19 @@ function App() {
       if (!targetId) return;
       const targetElement = document.getElementById(targetId);
       if (!targetElement) return;
-
+    
       e.preventDefault();
-      const headerHeight = headerRef.current.offsetHeight;
-
+    
+      // Aniq offset qo'llash
+      const headerHeight = 70; // header balandligini o'rnating
+    
       window.scrollTo({
         top: targetElement.offsetTop - headerHeight,
         behavior: 'smooth'
       });
     };
+    
+    
 
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => link.addEventListener('click', handleScroll));

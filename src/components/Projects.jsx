@@ -67,7 +67,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="text-white bg-[#272c2e] box-shadow-small">
-      <div className="container-custom pt-12 pb-12">
+      <div className="container-custom pt-20 pb-12">
         <h2
           className="text-5xl text-center mb-10 900:text-3xl 900:mb-2"
           data-aos="fade-up"
