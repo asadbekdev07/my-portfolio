@@ -3,27 +3,27 @@ import { Timeline, ConfigProvider } from "antd";
 
 const Experience = () => {
   const timelineItems = [
+    // {
+    //   date: "February 2024 - Current",
+    //   position: "Frontend Developer",
+    //   company: "Limsa",
+    //   description: [
+    //     "Troubleshot complex issues under pressure",
+    //     "Enhanced user experience through intuitive interfaces",
+    //     "Integrated and managed RESTful APIs using the Fetch API",
+    //   ],
+    // },
+    // {
+    //   date: "November 2023 - May 2024",
+    //   position: "Part-time Frontend Developer",
+    //   company: "CosmicCode",
+    //   description: [
+    //     "We did custom projects with my frontend and backend developer friends who work in programming and want to work extra part-time.",
+    //   ],
+    // },
     {
-      date: "February 2024 - Current",
-      position: "Frontend Developer",
-      company: "Limsa",
-      description: [
-        "Troubleshot complex issues under pressure",
-        "Enhanced user experience through intuitive interfaces",
-        "Integrated and managed RESTful APIs using the Fetch API",
-      ],
-    },
-    {
-      date: "November 2023 - May 2024",
-      position: "Part-time Frontend Developer",
-      company: "CosmicCode",
-      description: [
-        "We did custom projects with my frontend and backend developer friends who work in programming and want to work extra part-time.",
-      ],
-    },
-    {
-      date: "September 2022 - October 2023",
-      position: "Frontend Developer",
+      date: "March 2024 - September 2024",
+      position: "Intern Frontend Developer",
       company: "IT Time Agency",
       description: [
         "Continuously updated skills through training courses, workshops, and self-study — staying current on industry rends and emerging technologies. Debugged complex software issues, leading to a more stable product release.",

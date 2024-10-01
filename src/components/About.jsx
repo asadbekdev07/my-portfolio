@@ -10,7 +10,7 @@ const About = () => {
             <p className="before-paragraph-custom mb-12 900:mb-8" data-aos="fade-up">
               I am a highly motivated Frontend Developer with almost two years of
               experience, adept at transforming complex requirements into
-              user-friendly solutions. At <span className="text-[#ff9633]">IT Time Agency</span> and <a className="text-[#ff9633]" href="https://limsa.uz/" target="_blank">Limsa</a>, I honed my skills in
+              user-friendly solutions. At <span className="text-[#ff9633]">IT Time Agency</span>, I honed my skills in
               JavaScript, React, Redux, and the integration of RESTful APIs,
               developing custom APIs and enhancing user interfaces to significantly
               improve project outcomes and client satisfaction.
